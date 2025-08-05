@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0078d7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005ea2;
+}
+
+button:active {
+    background-color: #004785;
+}
+
+button:nth-child(16) {
+    background-color: #f44336; /* Clear button (C) */
+}
+
+button:nth-child(16):hover {
+    background-color: #c72f24;
+}
+button:nth-child(1), button:nth-child(2) {
+    background-color: #f4a261;
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover {
+    background-color: #e76f51;
+}
+button:nth-child(4) {
+    background-color: #f44336; /* Red for delete button */
+}
+
+button:nth-child(4):hover {
+    background-color: #d32f2f;
+}
